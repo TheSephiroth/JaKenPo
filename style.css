@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Big Shoulders Text', cursive;
+	background: url('cool-background(1).png')
+ }
+
+ h1,h3{
+ 	color: black;
+ 	text-align: center;
+ 	margin-bottom: 5%;
+ }
+ .container{
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	justify-content: space-around;
+	height: auto;
+
+
+ }
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30vw;
+	height: 30vh;
+	background: white;
+	border: 1px solid white;
+	border-radius: 10px;
+
+}
+.card{
+	-webkit-box-shadow: -1px 6px 8px 3px rgba(0,0,0,0.39);
+	-moz-box-shadow: -1px 6px 8px 3px rgba(0,0,0,0.39);
+	box-shadow: -1px 6px 8px 3px rgba(0,0,0,0.39);
+}
+.card:hover{
+	-webkit-box-shadow: 1px 6px 6px 3px rgba(0,0,0,0.39);
+	-moz-box-shadow: 1px 6px 6px 3px rgba(0,0,0,0.39);
+	box-shadow: 1px 6px 6px 3px rgba(0,0,0,0.39);
+}
+.card:active{
+	-webkit-box-shadow: 1px 6px 6px 5px rgba(0,0,0,0.39);
+	-moz-box-shadow: 1px 6px 6px 5px rgba(0,0,0,0.39);
+	box-shadow: 1px 6px 6px 5px rgba(0,0,0,0.39);
+}
+.card p{
+	color: black;
+	visibility: hidden;
+}
+.card:hover p{
+	visibility: visible;
+}
+
+
+img{
+ 	width: 25%;
+ }
+
+.results{
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.show{
+	visibility: visible;
+}
+.results .card{
+	margin-top: 10vh;
+	
+}
+.results .card:hover{
+	-webkit-box-shadow: -1px 6px 8px 3px rgba(0,0,0,0.39);
+	-moz-box-shadow: -1px 6px 8px 3px rgba(0,0,0,0.39);
+	box-shadow: -1px 6px 8px 3px rgba(0,0,0,0.39);
+}
+
+.win{
+	background: rgba(0, 255, 0, 0.4)
+}
+.win:before{
+		content: "Winner!";
+}
+.lose{
+	background: rgba(255, 0, 0, 0.4)
+}
+.lose:before{
+		content: "Looser!";
+}
+
+.tie{
+	background: rgba(0, 0, 255, 0.4)
+}
+.tie:before{
+		content: "ITS A TIE!";
+}
+
+.results p {
+	visibility: visible;
+}
